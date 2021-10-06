@@ -60,9 +60,16 @@ app.post('/users', (req, res) => {
 
 app.post('/sendemail',(req,res) => {
 
+
+  // Email part not fully completed, Still in development stage 
+  // Email part skeleton done. config have to add .
+
     var form = new multiparty.Form();
     form.parse(req, function(err, fields, files) {
 
+      if(err) {
+        return res.status(500).send({ success: false, message: 'invalid request', e: err });
+      }
 
         var transporter = nodemailer.createTransport({
             host: 'smtp-mail.outlook.com', // hostname
