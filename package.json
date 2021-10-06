@@ -1,0 +1,25 @@
+{
+  "name": "node-app",
+  "version": "1.0.0",
+  "description": "Node app for email send ",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Antohevin/nodeapp.git"
+  },
+  "keywords": [],
+  "author": "Anto Hevin",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^9.0.2",
+    "express": "^4.17.1",
+    "mongoose": "^5.12.8",
+    "multiparty": "^4.2.2"
+  },
+  "engines": {
+    "node": "14.17.0"
+  }
+}
